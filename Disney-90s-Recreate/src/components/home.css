@@ -1,0 +1,199 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 2; 
+    padding: 10px 10px; 
+}
+
+.tagline {
+    color: rgb(43, 43, 235);
+    padding-left: 15px;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    color: rgb(228, 221, 82);
+    margin: 0;
+    padding: 0;
+}
+
+
+.header img {
+    height: 120px; /* Set the height to fit your header */
+    width: auto; /* Maintain the aspect ratio */
+    margin-left: 20px; /* Add spacing to the left of the image */
+    margin-right: 20px; /* Add spacing to the right of the image */
+    display: block; /* Ensures no inline spacing issues */
+    align-self: center; /* Centers the image vertically within the flex container */
+}
+
+.disney {
+    font-family: 'Walt Disney Script';
+    font-size: 80px;
+    margin-right: 5px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.dot-era {
+    font-size: 45px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+}
+
+
+.nav {
+    font-family: 'DM Sans', sans-serif !important;
+    font-style: normal;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+    justify-content: center;
+    color: rgb(43, 43, 235);
+}
+
+button {
+    background-color: rgb(43, 43, 235);
+    color: white;
+    margin: -2px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px 5px 25px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: rgb(30, 30, 200);
+    transform: scale(1.05);
+}
+
+button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    margin-top: 120px; 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Full width */
+    height: 500px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('../assets/Resources/Disney_Magic.jpg'); 
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    opacity: 0.7;
+    mask-image: url('../assets/Resources/background1.gif');
+    mask-size: cover;
+    mask-position: center;
+    -webkit-mask-image: url('../assets/Resources/background1.gif');
+    -webkit-mask-size: cover;
+    -webkit-mask-position: center;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+}
+
+.main-container {
+    background: rgb(84,81,123);
+    background: linear-gradient(329deg, rgba(84,81,123,1) 0%, rgba(95,95,241,1) 35%, rgba(145,236,255,1) 100%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.content-wrapper {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+.footer-image {
+    max-width: 150px;
+    height: auto;
+    margin-left: 10px;
+}
+
+
+
